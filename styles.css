@@ -1,0 +1,98 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.text-content {
+    flex: 1;
+    margin-top: 20px;
+}
+
+.image-content {
+    flex: 1;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.title {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 46px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.subtitle {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.btn {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #b91f2a;
+    color: white;
+    width: 315px;
+    height: 60px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #a31924;
+}
+
+.image {
+    max-width: 100%; /* Устанавливаем максимальную ширину изображения в зависимости от размеров экрана */
+    flex: 0 0 auto;
+    margin-left: 60px; /* Перемещаем изображение влево */
+}
+
+.picture {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin-top: 0; /* Убираем отступ сверху */
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Изменяем направление блока на вертикальное для мобильных устройств */
+    }
+
+    .text-content,
+    .image-content {
+        flex: auto; /* Поддерживаем гибкость блоков текста и изображения для адаптации */
+    }
+
+    .image {
+        margin-left: 0; /* Убираем отступ слева для мобильных устройств */
+    }
+
+    .btn {
+        width: 100%; /* Делаем кнопку на всю ширину блока */
+        margin-bottom: 20px; /* Добавляем отступ между кнопкой и текстом */
+        font-size: 16px;
+    }
+
+    .title {
+        font-size: 28px; /* Уменьшаем размер заголовка для мобильных устройств */
+    }
+
+    .subtitle {
+        font-size: 18px; /* Уменьшаем размер подзаголовка для мобильных устройств */
+    }
+}
