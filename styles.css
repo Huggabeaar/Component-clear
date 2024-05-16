@@ -69,7 +69,7 @@
 }
 
 @media (max-width: 768px) {
-    .container {
+    .container-grid {
         flex-direction: column; /* Изменяем направление блока на вертикальное для мобильных устройств */
     }
 
